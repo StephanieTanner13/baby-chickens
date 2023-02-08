@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&family=Yeseva+One&display=swap');
+
+html,
+body,
+#root {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.canvas1 {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 10%;
+    left: 15%;
+}
+
+canvas {
+    touch-action: none;
+}
+
+.title {
+    position: absolute;
+    height: auto;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1000px;
+}
+
+.story {
+    height: 40px;
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    z-index: 3;
+    padding: 0.6rem;
+}
+
+.musicPlayer img {
+    height: 40px;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    z-index: 3;
+    padding: 0.6rem;
+}
+
+.storyText {
+    background-color: #ffffff;
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 10%;
+    left: 15%;
+    z-index: -1;
+    overflow: scroll;
+}
+
+.show {
+    z-index: 2;
+}
+
+.storyText p {
+    padding: 4rem 3rem 0rem 3rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.storyText h4 {
+    font-family: 'Yeseva One';
+    text-align: right;
+    padding: 0rem 4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        max-width: 500px;
+    }
+    .story {
+        height: 20px;
+        top: 13.5%;
+    }
+
+    .musicPlayer img {
+        height: 20px;
+    }
+}
